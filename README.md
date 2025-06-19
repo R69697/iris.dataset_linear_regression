@@ -35,57 +35,27 @@ This project applies **Linear Regression** on the classic Iris dataset using Pyt
 - Seaborn (optional, for enhanced visualization)
 
 ---
+## 🚀 Run This Project (Using Conda – One Block Setup)
 
-## 🚀 Run This Project (Line by Line via Conda)
-
-### 📌 Step 1: Clone the Repository
+To run this project using Conda and Jupyter Notebook, follow the steps below:
 
 ```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/rajani/iris-linear-regression.git
 cd iris-linear-regression
 
-Step 2: Create a Conda Environment
-
-conda create -n irisenv python=3.10
-
-📌 Step 3: Activate the Environment
+# 2️⃣ Create and activate the Conda environment
+conda create -n irisenv python=3.10 -y
 conda activate irisenv
 
-📌 Step 4: Install Required Libraries
+# 3️⃣ Install required libraries
+conda install numpy pandas matplotlib scikit-learn jupyter -y
+# Optional: For enhanced visuals
+conda install seaborn -y
 
-conda install numpy pandas matplotlib scikit-learn jupyter
-(Optional – if you're using Seaborn for plots)
-
-
-conda install seaborn
-📌 Step 5: Launch Jupyter Notebook
-
+# 4️⃣ Launch Jupyter Notebook (inside the activated env)
 jupyter notebook
-Then open linear.reg.ipynb in browser, and click Run All to execute all cells.
 
-📊 Model Output Includes:
-📈 A regression line plotted on top of actual data
-
-📉 Error metrics like:
-
-Mean Squared Error (MSE)
-
-R² Score
-
-🔍 Coefficients and intercept of the model
-
-💬 Dataset Info (Iris)
-Source: scikit-learn's built-in load_iris()
-
-Classes: Setosa, Versicolor, Virginica
-
-Features Used: Sepal Length, Sepal Width, Petal Length, Petal Width
-
-Target Variable: Petal Length (for regression)
-
-📌 Sample Plot (If added):
-
-(Make sure to place plot image inside /assets folder)
 
 📬 About Me
 Rajani Maurya
